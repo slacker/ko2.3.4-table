@@ -165,8 +165,8 @@
 					$this->update();
 				}
 			
-			// check for ORM
-				if($data instanceof ORM_Iterator)
+			// check for ORM or DB Result
+				if($data instanceof ORM_Iterator OR $data instanceof Database_MySQL_Result)
 				{
 					foreach($data as $orm)
 					{
