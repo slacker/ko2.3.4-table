@@ -674,6 +674,7 @@
 		public function add_column($key, $insert_before = NULL)
 		{
 			// variables
+				$obj = new stdClass();
 				$obj->key			= $key;
 				$obj->insert_before	= $insert_before;
 				array_push($this->user_columns, $obj);
